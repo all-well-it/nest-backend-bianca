@@ -17,7 +17,5 @@ services:
     container_name: node_app
     build: ../
     ports:
-      - "3000:3000"
-    volumes:
-      - .:/nest-backend-bianca
+      - "3001:3001"
     command: sh -c "yarn install && yarn start"
