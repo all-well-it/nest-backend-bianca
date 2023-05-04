@@ -1,22 +1,3 @@
-## Installation
-
-```bash
-$ yarn install
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
-
 ## Running the container
 
 ```bash
@@ -29,7 +10,7 @@ $ yarn down
 
 ## Use on browser
 ```html
-http://localhost:3000/
+http://localhost:3008/
 ```
 
 ## Test
@@ -49,7 +30,7 @@ $ yarn run test:cov
 
 ```bash
 # copy the .env.template file to .env
-$ cp docker/.env.template .env
+$ cp .env.template .env
 
 # edit the .env file and set the mySQL configuration variables
 
@@ -57,10 +38,8 @@ $ cp docker/.env.template .env
 $ yarn up
 
 # start the application and connect to the database
-$ yarn start
+$ yarn start:dev
 
-# (optional) connect to the mySQL shell of the database
-$ docker exec -it allwell_db bash
 ```
 ## API Paths
 
